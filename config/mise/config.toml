@@ -1,0 +1,7 @@
+[tools]
+node = "26.5"
+python = "3.14"
+go = "1.26"
+rust = "stable"
+java = "26"
+lua = "5.5"
