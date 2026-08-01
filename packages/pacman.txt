@@ -39,5 +39,6 @@ zoxide
 python-rich
 python-rich-argparse
 
-# Neovim build deps
+# Neovim
+nvim
 tree-sitter-cli
