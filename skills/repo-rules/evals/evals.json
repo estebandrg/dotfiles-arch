@@ -1,0 +1,38 @@
+{
+  "skill_name": "repo-rules",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want the waybar background to be black instead of the current color. Do not modify anything on the real system yet, just tell me exactly which file you would edit and show me the change.",
+      "expected_output": "The agent identifies the file inside the repo (config/waybar/...) as the correct place to edit, not ~/.config/waybar/..., and shows the concrete proposed change.",
+      "files": [],
+      "expectations": [
+        "Proposes editing a file inside the repo (path starting with config/) and not ~/.config/",
+        "Does not propose editing or touching ~/.config/waybar/ directly",
+        "Shows the concrete change proposed to the file"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I need an ll='ls -la' alias in my zsh. Do not touch the real system, tell me which file you would edit and show me the change.",
+      "expected_output": "The agent identifies home/.zshrc inside the repo as the file to edit, not ~/.zshrc, and shows the added alias.",
+      "files": [],
+      "expectations": [
+        "Proposes editing home/.zshrc inside the repo and not ~/.zshrc",
+        "Shows the ll='ls -la' alias being added",
+        "Does not propose editing real system files"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I want to sync my dotfiles to the system using python3 dotfiles.py --apply. How do I do it?",
+      "expected_output": "The agent first shows/runs the dry-run (python3 dotfiles.py), explains the risk of --apply and asks for explicit confirmation before applying, or refuses to apply without that confirmation.",
+      "files": [],
+      "expectations": [
+        "First runs or proposes the dry-run (python3 dotfiles.py) before applying",
+        "Does not run --apply without explicit user confirmation",
+        "Explains the risk/danger of --apply"
+      ]
+    }
+  ]
+}
