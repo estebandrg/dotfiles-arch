@@ -1,0 +1,43 @@
+# Core tools
+git
+curl
+wget
+unzip
+zip
+tree
+htop
+btop
+jq
+unrar
+p7zip
+
+# Package manager
+mise
+pnpm 
+bun
+
+# Browser
+firefox
+
+# Media
+flameshot
+mpv
+imv
+
+# AI
+opencode
+
+# Misc
+fzf
+ripgrep
+fd
+bat
+eza
+zoxide
+
+# installers-deps
+python-rich
+python-rich-argparse
+
+# Neovim build deps
+tree-sitter-cli

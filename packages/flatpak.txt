@@ -1,0 +1,8 @@
+# Flatpak packages
+# Add your flatpak packages below, one per line
+# Example:
+# com.spotify.Client
+# com.discordapp.Discord
+
+# Browser
+app.zen_browser.zen

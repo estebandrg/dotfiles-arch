@@ -1,0 +1,9 @@
+# AUR packages (installed with yay)
+# Add your AUR packages below, one per line
+# Example:
+# google-chrome
+# visual-studio-code-bin
+
+# Discord + BetterDiscord CLI
+bdcli-bin
+discord-latest-bin
