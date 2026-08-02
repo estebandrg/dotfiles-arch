@@ -39,7 +39,7 @@ alias ll='eza -l --icons --header'
 
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
-export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/go/bin:$PATH"
 eval "$(zoxide init zsh)"
 
 HISTFILE=~/.zsh_history
