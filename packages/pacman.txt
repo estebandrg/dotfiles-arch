@@ -42,3 +42,9 @@ python-rich-argparse
 # Neovim
 nvim
 tree-sitter-cli
+
+# Shell & fetch
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
+fastfetch
